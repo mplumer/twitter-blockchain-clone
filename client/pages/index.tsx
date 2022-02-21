@@ -1,5 +1,7 @@
 import type { NextPage } from 'next'
 import Sidebar from '../components/Sidebar';
+import Feed from '../components/home/Feed';
+import Widgets from '../components/Widgets';
 
 const style = {
   wrapper: `flex justify-center h-screen w-screen select-none bg-[#15202b] text-white`,
@@ -12,8 +14,8 @@ const Home: NextPage = () => {
     <div className={style.wrapper}>
       <div className={style.content}>
         <Sidebar initialSelectedIcon={'Home'}/>
-        <h2>Feed</h2>
-        <h2>Widgets</h2>
+        <Feed />
+        <Widgets />
     </div>
     </div>
     
