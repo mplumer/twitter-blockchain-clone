@@ -14,6 +14,7 @@ interface SidebarOptionProps {
     Icon: IconType
     isActive?: Boolean
     setSelected?: Dispatch<SetStateAction<String>>
+    redirect?: URL | string
 }
 
 function SidebarOption({
@@ -21,6 +22,7 @@ function SidebarOption({
     Icon,
     isActive,
     setSelected,
+    redirect,
 }: SidebarOptionProps) {
 
     const handleClick = (buttonText = text) => {
